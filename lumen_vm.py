@@ -216,7 +216,7 @@ class LumenVertexModel:
     '''
     class for a 2d cross-sectional kind of vertex model for a lumen
     '''
-    def __init__(self,n_cells,jitter=0., P_cell=1., P_lumen=0.5, cell_thickness=1.,k=1., l_a=0.8, l_l=1.,p0=4.):
+    def __init__(self,n_cells,jitter=0., P_cell=1., P_lumen=0.5, cell_thickness=1.,k=1., l_a=0.8, l_l=1.,l_b=0,p0=4.):
         # initialized with every vertex equally spaced along the unit circle. Can jitter this later.
         self.apical_vertices = [n_cells/5.*(jitter*(np.random.rand())*np.array([np.cos(2*np.pi*i/n_cells),np.sin(2*np.pi*i/n_cells)])) for i in range(n_cells)]
         
@@ -231,7 +231,7 @@ class LumenVertexModel:
         self.P_lumen = P_lumen
         
         self.l_a = l_a
-        self.l_b = 0.
+        self.l_b = l_b
         self.l_l = l_l
         self.p0=p0
         
