@@ -21,4 +21,5 @@ Claudia G. Vasquez, Vipul T. Vachharajani, Carlos O. Garzon Coral, and Alexander
                 'l_l':0,
                 }
           grow_cyst(params,stretched=True)
-          
+* 2D_shape_analysis - functions and notebook for 2D lumen and cyst shape segmentation using gp135/PDX signal
+* 3D_shape_analysis - functions and notebook for 3D lumen and cyst shape segmentation using Lifeact-RFP (F-actin) signal
